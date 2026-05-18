@@ -1,0 +1,19 @@
+{
+  "name": "playground",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "i18n-eslint-plugin": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@typescript-eslint/parser": "^8.59.4",
+    "eslint": "^10.4.0",
+    "react": "^19.2.4",
+    "typescript": "^6.0.3"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "don-dev-conf-2026",
+  "private": true,
+  "description": "Don Dev Conf 2026 — i18n ESLint plugin and playground",
+  "packageManager": "pnpm@10.22.0",
+  "scripts": {
+    "build": "pnpm --filter i18n-eslint-plugin build",
+    "test": "pnpm --filter i18n-eslint-plugin test",
+    "lint": "pnpm build && pnpm --filter playground lint"
+  }
+}
