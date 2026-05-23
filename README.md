@@ -2,6 +2,14 @@
 
 Ссылки и примеры кода из доклада Don Dev Conf 2026.
 
+## Ссылки из доклада
+
+- [Кастомное правило Eslint](https://eslint.org/docs/latest/extend/custom-rule-tutorial)
+- [AST Explorer](https://astexplorer.net)
+- [Codemods](https://martinfowler.com/articles/codemods-api-refactoring.html)
+
+
+
 ## Структура
 
 ```
@@ -17,22 +25,3 @@ pnpm test    # RuleTester в пакете плагина
 pnpm build   # сборка плагина в dist/
 pnpm lint    # ESLint на playground (сборка + lint)
 ```
-
-## Плагин
-
-Правило `require-i18n` запрещает кириллицу в строках, JSX-тексте и шаблонных литералах.
-
-Подключение в flat config:
-
-```js
-import i18nPlugin from "i18n-eslint-plugin";
-
-export default [
-  {
-    plugins: { i18n: i18nPlugin },
-    rules: { "i18n/require-i18n": "error" },
-  },
-];
-```
-
-См. [examples/playground/eslint.config.js](examples/playground/eslint.config.js).
